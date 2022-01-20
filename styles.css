@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("image.jpg");
+  font-size: 18px;
+  line-height: 1.8em;
+}
+
+header {
+  text-align: center;
+  margin: 30px auto;
+  width: 50%;
+  font-family: "Raleway", sans-serif;
+}
+
+header h1 {
+  font-family: "Leckerli One", sans-serif;
+  font-size: 4rem;
+  margin: 1.3em auto 0.7em;
+}
+
+.container {
+  width: 80%;
+  margin: 2em auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 900px) {
+  .container {
+    width: 50%;
+  }
+}
+
+fieldset {
+  border-style: none;
+}
+
+.personal-information input,
+select {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+legend,
+input,
+label {
+  margin-left: 15px;
+}
+
+.personal-information input {
+  width: 90%;
+  margin: 0px 15px 15px;
+}
+
+select {
+  margin-left: 15px;
+}
+
+fieldset {
+  margin: 20px 0;
+}
+
+.questions-options {
+  margin: 0px 15px;
+  height: 40px;
+}
+
+textarea {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  width: 90%;
+  height: 100px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  width: 40%;
+  margin: 10px auto;
+  border-style: solid;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffe6f2;
+  opacity: 2;
+}

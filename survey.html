@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customer Satisfaction Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Leckerli+One&family=Assistant:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>CREAMY</h1>
+      <h2>Customer Satisfaction Survey</h2>
+      <h3>Thank you for helping us to improve our service!</h3>
+    </header>
+
+    <div class="container">
+      <form action="" method="get">
+        <div class="personal-information">
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="personal-information">
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <div class="personal-information">
+          <label for="number">Phone number:</label>
+          <input
+            id="number"
+            type="tel"
+            name="number"
+            pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+            placeholder="Enter your phone"
+          />
+        </div>
+
+        <label for="age">Which range includes your age?</label>
+        <select id="age" name="age">
+          <option disabled selected value>Select</option>
+          <option value="younger">Younger than 18</option>
+          <option value="18-24">18-24</option>
+          <option value="25-34">25-34</option>
+          <option value="35-44">35-44</option>
+          <option value="35-44">35-44</option>
+          <option value="45-54">35-44</option>
+          <option value="older">45 or older</option>
+        </select>
+
+        <fieldset>
+          <legend>How would you rate your overall satisfaction with us?</legend>
+          <div class="questions-options">
+            <input
+              id="very-sat"
+              name="satisfaction"
+              type="radio"
+              value="very-sat"
+            />
+            <label for="very-sat" class="radio-label">Very satisfied</label>
+          </div>
+          <div class="questions-options">
+            <input
+              id="somewhat-sat"
+              name="satisfaction"
+              type="radio"
+              value="somewhat-sat"
+            />
+            <label for="somewhat-sat" class="radio-label"
+              >Somewhat satisfied</label
+            >
+          </div>
+          <div class="questions-options">
+            <input
+              id="neutral"
+              name="satisfaction"
+              type="radio"
+              value="neutral"
+            />
+            <label for="neutral" class="radio-label">Neutral</label>
+          </div>
+          <div class="questions-options">
+            <input
+              id="somewhat-dis"
+              name="satisfaction"
+              type="radio"
+              value="somewhat-dis"
+            />
+            <label for="somewhat-dis" class="radio-label"
+              >Somewhat dissatisfied</label
+            >
+          </div>
+          <div class="questions-options">
+            <input
+              id="very-dis"
+              name="satisfaction"
+              type="radio"
+              value="very-dis"
+            />
+            <label for="very-dis" class="radio-label">Very dissatisfied</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Which of the following would you like to be the "Special Flavor" of
+            the next month?
+          </legend>
+          <div class="questions-options">
+            <input id="avocado" name="flavor" type="radio" value="avocado" />
+            <label for="avocado" class="radio-label">Avocado</label>
+          </div>
+          <div class="questions-options">
+            <input id="cinnamon" name="flavor" type="radio" value="cinnamon" />
+            <label for="cinnamon" class="radio-label"
+              >Vegan cinnamon roll</label
+            >
+          </div>
+          <div class="questions-options">
+            <input
+              id="pineapple"
+              name="flavor"
+              type="radio"
+              value="pineapple"
+            />
+            <label for="pineapple" class="radio-label">Pineapple & Basil</label>
+          </div>
+          <div class="questions-options">
+            <input id="boozy" name="flavor" type="radio" value="boozy" />
+            <label for="boozy" class="radio-label">Boozy chocolate</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>
+            Select all the types of flavors you would like to see more in our
+            stores:
+          </legend>
+          <div class="questions-options">
+            <input
+              id="bittersweet"
+              type="checkbox"
+              name="options"
+              value="bittersweet"
+            />
+            <label for="bittersweet" class="checkbox-label">Bittersweet</label>
+          </div>
+          <div class="questions-options">
+            <input id="vegan" type="checkbox" name="options" value="vegan" />
+            <label for="vegan" class="checkbox-label">Vegan</label>
+          </div>
+          <div class="questions-options">
+            <input id="fruit" type="checkbox" name="options" value="fruit" />
+            <label for="fruit" class="checkbox-label">Fruit</label>
+          </div>
+          <div class="questions-options">
+            <input id="spices" type="checkbox" name="options" value="spices" />
+            <label for="spices" class="checkbox-label">Spice</label>
+          </div>
+          <div class="questions-options">
+            <input id="sour" type="checkbox" name="options" value="sour" />
+            <label for="sour" class="checkbox-label">Sour</label>
+          </div>
+          <div class="questions-options">
+            <input id="boozy" type="checkbox" name="options" value="boozy" />
+            <label for="boozy" class="checkbox-label">Boozy</label>
+          </div>
+          <div class="questions-options">
+            <input id="salty" type="checkbox" name="options" value="salty" />
+            <label for="salty" class="checkbox-label">Salty</label>
+          </div>
+          <div class="questions-options">
+            <input
+              id="combinations"
+              type="checkbox"
+              name="options"
+              value="combinations"
+            />
+            <label for="combinations" class="checkbox-label"
+              >Weird Combinations</label
+            >
+          </div>
+        </fieldset>
+
+        <label for="comments"
+          >Do you have any other comments, questions or concerns?</label
+        >
+        <textarea id="comments" placeholder="Enter your comment"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
